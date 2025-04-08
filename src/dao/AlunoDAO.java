@@ -36,7 +36,7 @@ public class AlunoDAO {
              ResultSet rs = pstmt.executeQuery()) {
 
             while (rs.next()) {
-            	Aluno aluno = new Aluno(0, sql, 0);
+            	Aluno aluno = new Aluno();
             	aluno.setId(rs.getInt("id"));
             	aluno.setNome(rs.getString("nome"));
             	aluno.setIdade(rs.getInt("idade"));

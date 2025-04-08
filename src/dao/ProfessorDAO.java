@@ -36,7 +36,7 @@ public class ProfessorDAO {
              ResultSet rs = pstmt.executeQuery()) {
 
             while (rs.next()) {
-                Professor professor = new Professor(0, sql, 0, sql, sql);
+                Professor professor = new Professor();
                 professor.setId(rs.getInt("id"));
                 professor.setNome(rs.getString("nome"));
                 professor.setIdade(rs.getInt("idade"));

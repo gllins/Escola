@@ -3,12 +3,9 @@ package model;
 public class Pessoa {
 	private int id;
 	private String nome;
-	protected int idade;
-public Pessoa(int id, String nome, int idade) {
-		super();
-		this.id = id;
-		this.nome = nome;
-		this.idade = idade;
+	private int idade;
+public Pessoa() {
+
 	}
 public int getId() {
 	return id;

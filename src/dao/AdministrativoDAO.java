@@ -36,7 +36,7 @@ public class AdministrativoDAO {
              ResultSet rs = pstmt.executeQuery()) {
 
             while (rs.next()) {
-            	Administrativo administrativo = new Administrativo(0, sql, 0);
+            	Administrativo administrativo = new Administrativo();
                 administrativo.setId(rs.getInt("id"));
                 administrativo.setNome(rs.getString("nome"));
                 administrativo.setIdade(rs.getInt("idade"));

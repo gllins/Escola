@@ -73,6 +73,17 @@ public class TelaInicial extends JFrame {
 		contentPane.add(btnAdmin);
 		
 		JButton btnProf = new JButton("");
+		btnProf.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				 GerProf gerenciamento = new  GerProf();
+			        
+				 
+				    gerenciamento.setVisible(true);
+			        TelaInicial.this.dispose();
+				
+				
+			}
+		});
 		btnProf.setIcon(new ImageIcon("C:\\Users\\USER\\Downloads\\professor.png"));
 		btnProf.setBounds(29, 169, 75, 68);
 		contentPane.add(btnProf);
